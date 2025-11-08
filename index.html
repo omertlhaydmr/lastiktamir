@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usta Lastik - Profesyonel Oto Lastik Tamir ve Satış Servisi</title>
+    <meta name="description" content="Oto lastik tamiri, lastik satışı, rot balans ayarı ve lastik oteli hizmetleri sunan profesyonel servis. Güvenliğiniz için buradayız.">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Usta Lastik - Profesyonel Oto Lastik Servisi">
+    <meta property="og:description" content="Profesyonel lastik tamiri, değişimi ve rot balans hizmetleri ile yola güvenle devam edin.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ustalastik.com.tr"> <meta property="og:image" content="https://www.ustalastik.com.tr/img/sosyal-medya-kapak.jpg"> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Ana font ailesini Inter olarak ayarla */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="#" class="flex-shrink-0 flex items-center gap-2" aria-label="Ana Sayfa">
+                <svg class="h-10 w-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                </svg>
+                <span class="text-2xl font-extrabold text-gray-900">Usta<span class="text-blue-600">Lastik</span></span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Ana Sayfa</a>
+                <a href="#hakkimizda" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Hakkımızda</a>
+                <a href="#hizmetler" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Hizmetler</a>
+                <a href="#markalar" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Markalar</a>
+                <a href="#galeri" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Galeri</a>
+                <a href="#iletisim" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">İletişim</a>
+            </div>
+            
+            <div class="hidden md:block">
+                <a href="#iletisim" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+                    Teklif Alın
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Ana Sayfa</a>
+                <a href="#hakkimizda" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Hakkımızda</a>
+                <a href="#hizmetler" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Hizmetler</a>
+                <a href="#markalar" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Markalar</a>
+                <a href="#galeri" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Galeri</a>
+                <a href="#iletisim" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">İletişim</a>
+                <a href="#iletisim" class="block w-full text-left px-3 py-3 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                    Teklif Alın
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="relative h-[70vh] min-h-[500px] bg-cover bg-center" style="background-image: url('img/hero-bg.jpg');">
+            <div class="absolute inset-0 bg-black/60"></div> <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">Güvenliğiniz İçin Buradayız</h1>
+                <p class="text-lg md:text-2xl font-light mb-8 max-w-2xl drop-shadow-md">Profesyonel lastik tamiri, değişimi ve rot balans hizmetleri ile yola güvenle devam edin.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#hizmetler" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105">Hizmetlerimiz</a>
+                    <a href="#iletisim" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">Bize Ulaşın</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="hizmetler" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">Neler Yapıyoruz?</h2>
+                    <p class="mt-2 text-3xl lg:text-4xl font-extrabold text-gray-900">Kapsamlı Servis Hizmetlerimiz</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /><path d="M10.88 10.151c.14-.401.31-.773.51-1.116.2-.344.434-.65.7-.919.266-.269.56-.492.88-.669.32-.177.67-.298 1.03-.36a3.504 3.504 0 0 1 1.63.03c.5.09 1 .26 1.4.5.4.24.7.56.9.94.2.38.3.82.3 1.3v.03c0 .65-.16 1.28-.46 1.84a5.038 5.038 0 0 1-1.22 1.64 7.21 7.21 0 0 1-1.68 1.25 7.96 7.96 0 0 1-1.9.8l-.01.01c-.6.16-1.1.39-1.5.68-.4.29-.7.65-.9 1.05-.2.4-.3.85-.3 1.3v.2" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Lastik Satışı</h3>
+                        <p class="text-gray-600">Her bütçeye ve araca uygun, önde gelen markaların yazlık, kışlık ve 4 mevsim lastik modelleri.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.87-5.87M11.42 15.17l-4.59-4.59L7.25 21l4.17-5.83Zm0 0L21.25 5.17c.06-.06.06-.15 0-.21L20.83 4.55c-.06-.06-.15-.06-.21 0L11.42 13.76l-4.59-4.59L4.55 9.58c-.06.06-.06.15 0 .21l6.87 6.87Z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Lastik Tamiri</h3>
+                        <p class="text-gray-600">Patlak lastik tamiri, yanak onarımı ve sibop değişimi gibi işlemleri profesyonel ekipmanlarla yapıyoruz.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0M3.75 18H7.5m3-6h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0M3.75 12H7.5" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Rot & Balans Ayarı</h3>
+                        <p class="text-gray-600">Son teknoloji cihazlarımızla aracınızın rot ve balans ayarlarını yaparak sürüş konforunuzu artırıyoruz.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Jant Düzeltme</h3>
+                        <p class="text-gray-600">Eğilmiş, çatlamış veya hasar görmüş jantlarınızı orijinal formuna getirerek güvenliğinizi sağlıyoruz.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Lastik Oteli</h3>
+                        <p class="text-gray-600">Mevsimlik lastiklerinizi ideal koşullarda saklayarak ömürlerini uzatıyoruz. Vakti geldiğinde biz değiştiriyoruz.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12v6c0 .621.504 1.125 1.125 1.125h14.25c.621 0 1.125-.504 1.125-1.125v-6m-16.5 0H20.25m-16.5 0C3.75 7.015 7.015 3.75 12 3.75c4.965 0 8.25 3.265 8.25 8.25m-16.5 0h16.5M12 6.75v3M10.5 9.75h3" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Akü Satışı ve Değişimi</h3>
+                        <p class="text-gray-600">Aracınız için en uygun, garantili akü seçenekleri. Ücretsiz montaj ve eski akü alım hizmeti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hakkimizda" class="py-20 bg-gray-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    <div class="w-full lg:w-1.2">
+                        <img src="img/hakkimizda-ekip.jpg" alt="Usta Lastik Ekibi" class="w-full h-auto rounded-xl shadow-2xl object-cover">
+                    </div>
+                    <div class="w-full lg:w-1.2">
+                        <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">Biz Kimiz?</h2>
+                        <p class="mt-2 text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">20 Yıllık Tecrübe, Güven ve Kalite</p>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Usta Lastik olarak, 20 yılı aşkın süredir otomotiv sektöründe lastik tamiri ve satışı konusunda müşterilerimize dürüst ve kaliteli hizmet sunmaktayız. 
+                            Kurulduğumuz günden bu yana önceliğimiz her zaman müşteri memnuniyeti ve yol güvenliği olmuştur.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Uzman ekibimiz, en son teknolojiye sahip ekipmanlarımızla aracınız için en doğru çözümü sunmak için çalışır. Sadece bir lastikçi değil, yoldaki güvenilir ortağınız olmayı hedefliyoruz.
+                        </p>
+                        <a href="#iletisim" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+                            Bizimle İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="markalar" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">Anlaşmalı Markalarımız</h2>
+                    <p class="mt-4 text-lg text-gray-600">Dünyanın önde gelen lastik markalarının yetkili satıcısıyız.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
+                    <img src="img/markalar/michelin.png" alt="Michelin Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/pirelli.png" alt="Pirelli Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/goodyear.png" alt="Goodyear Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/bridgestone.png" alt="Bridgestone Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/continental.png" alt="Continental Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/lassa.png" alt="Lassa Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/petlas.png" alt="Petlas Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/hankook.png" alt="Hankook Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/nokian.png" alt="Nokian Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                    <img src="img/markalar/varta.png" alt="Varta Akü Logosu" class="mx-auto grayscale hover:grayscale-0 transition-all duration-300 h-16 object-contain">
+                </div>
+            </div>
+        </section>
+
+        <section id="galeri" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">Servisimizden Görüntüler</h2>
+                    <p class="mt-4 text-lg text-gray-600">Çalışma alanımızı ve yaptığımız işleri yakından görün.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl">
+                        <img src="img/galeri-servis-alani.jpg" alt="Servis Alanı" class="w-full h-64 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Servis Alanı</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl">
+                        <img src="img/galeri-rot-balans.jpg" alt="Rot Balans Cihazı" class="w-full h-64 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Rot Balans Cihazı</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl">
+                        <img src="img/galeri-lastik-degisim.jpg" alt="Lastik Değişimi" class="w-full h-64 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Lastik Değişimi</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl">
+                        <img src="img/galeri-lastik-oteli.jpg" alt="Lastik Oteli" class="w-full h-64 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Lastik Oteli</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl">
+                        <img src="img/galeri-bekleme-alani.jpg" alt="Müşteri Bekleme Alanı" class="w-full h-64 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Müşteri Bekleme Alanı</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl">
+                        <img src="img/galeri-stoklar.jpg" alt="Lastik Stokları" class="w-full h-64 object-cover">
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Lastik Stokları</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="iletisim" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900">İletişim & Konum</h2>
+                    <p class="mt-4 text-lg text-gray-600">Sorularınız için bize ulaşın veya servisimizi ziyaret edin.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Bilgilerimiz</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <svg class="h-8 w-8 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Adres</h4>
+                                    <p class="text-gray-600">Örnek Mah, Sanayi Sitesi, 123. Sk. No:45, 34000, Ataşehir/İstanbul</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <svg class="h-8 w-8 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.21-1.007-.584-1.374l-2.25-2.25a2.25 2.25 0 0 0-3.182 0L16.5 12.75a2.25 2.25 0 0 1-2.09-2.09l.25-1.5a2.25 2.25 0 0 0 0-3.182L10.374 3.584A2.25 2.25 0 0 0 9 3.372V2.25A2.25 2.25 0 0 0 6.75 0H4.5A2.25 2.25 0 0 0 2.25 2.25v4.5Z" /></svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Telefon</h4>
+                                    <a href="tel:+902161234567" class="text-gray-600 hover:text-blue-600 transition-colors">0 (216) 123 45 67</a><br>
+                                    <a href="tel:+905551234567" class="text-gray-600 hover:text-blue-600 transition-colors">0 (555) 123 45 67 (Acil)</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <svg class="h-8 w-8 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.625a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                                    <a href="mailto:info@ustalastik.com.tr" class="text-gray-600 hover:text-blue-600 transition-colors">info@ustalastik.com.tr</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <svg class="h-8 w-8 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Çalışma Saatleri</h4>
+                                    <p class="text-gray-600">Hafta İçi: 08:30 - 19:00</p>
+                                    <p class="text-gray-600">Cumartesi: 08:30 - 17:00</p>
+                                    <p class="text-gray-600">Pazar: Kapalı</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full h-96 lg:h-full rounded-xl shadow-lg overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12042.82583204996!2d29.12461935!3d40.99929265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac04d82f7e035%3A0x8f7d5d4d3e41ab19!2zQXTFn2VoaXIgU2FuYXlpIFNpdGVzaSwgS2F5xLFzZGHEn8SxLCBCYXLEscWfIENkLiwgMzQ3NTIgQXTFn2VoaXIgSGl6bWV0IEFsYW7EsS9BdGHFn2VoaXIvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1699477817757!5m2!1str!2str" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-extrabold text-white mb-4">Usta<span class="text-blue-500">Lastik</span></h3>
+                    <p class="text-gray-400">Yol güvenliğiniz bizim önceliğimiz. 20 yıllık tecrübe ile hizmetinizdeyiz.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Facebook</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z"/></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Instagram</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.872.229 2.573.468a3.615 3.615 0 0 1 2.18 2.179c.24 1.163.417 1.83.464 2.572.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.048 1.172-.225 1.872-.464 2.573a3.616 3.616 0 0 1-2.18 2.18c-1.163.24-1.83.417-2.572.464-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.872-.229-2.573-.468a3.616 3.616 0 0 1-2.18-2.179c-.24-1.163-.417-1.83-.464-2.572-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.048-1.172.225-1.872.464 2.573a3.616 3.616 0 0 1 2.18-2.18c1.163-.24 1.83.417 2.572.464C8.416 2.175 8.796 2.163 12 2.163Zm0 1.626c-3.14 0-3.483.01-4.71.07-1.107.05-1.702.218-2.298.448a2.397 2.397 0 0 0-1.67 1.67c-.23 1.107-.398 1.703-.448 2.298-.06 1.226-.07 1.57-.07 4.71s.01 3.483.07 4.71c.05 1.107.218 1.702.448 2.298a2.397 2.397 0 0 0 1.67 1.67c1.107.23 1.703.398 2.298.448 1.226.06 1.57.07 4.71.07s3.483-.01 4.71-.07c1.107-.05 1.702-.218 2.298-.448a2.397 2.397 0 0 0 1.67-1.67c.23-1.107.398-1.703.448-2.298.06-1.226.07-1.57.07-4.71s-.01-3.483-.07-4.71c-.05-1.107-.218-1.702-.448-2.298a2.397 2.397 0 0 0-1.67-1.67c-1.107-.23-1.703-.398-2.298-.448C15.483 3.799 15.14 3.789 12 3.789ZM12 7.8a4.2 4.2 0 1 0 0 8.4 4.2 4.2 0 0 0 0-8.4Zm0 6.8a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2Zm6.168-7.8a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92Z" clip-rule="evenodd"/></svg></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Hızlı Linkler</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hakkimizda" class="hover:text-white transition-colors">Hakkımızda</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Hizmetler</a></li>
+                        <li><a href="#markalar" class="hover:text-white transition-colors">Markalar</a></li>
+                        <li><a href="#galeri" class="hover:text-white transition-colors">Galeri</a></li>
+                        <li><a href="#iletisim" class="hover:text-white transition-colors">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Hizmetlerimiz</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Lastik Satışı</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Lastik Tamiri</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Rot & Balans Ayarı</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Jant Düzeltme</a></li>
+                        <li><a href="#hizmetler" class="hover:text-white transition-colors">Lastik Oteli</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Bize Ulaşın</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <svg class="h-5 w-5 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+                                <span>Örnek Mah, Sanayi Sitesi, 123. Sk. No:45, Ataşehir/İstanbul</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.21-1.007-.584-1.374l-2.25-2.25a2.25 2.25 0 0 0-3.182 0L16.5 12.75a2.25 2.25 0 0 1-2.09-2.09l.25-1.5a2.25 2.25 0 0 0 0-3.182L10.374 3.584A2.25 2.25 0 0 0 9 3.372V2.25A2.25 2.25 0 0 0 6.75 0H4.5A2.25 2.25 0 0 0 2.25 2.25v4.5Z" /></svg>
+                            <span>0 (216) 123 45 67</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 border-t border-gray-800 pt-8 text-center">
+                <p>© <span id="current-year"></span> Usta Lastik. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/905551234567?text=Merhaba,%20web%20sitenizden%20ulaşıyorum.%20Lastik%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum." 
+            target="_blank" 
+            aria-label="WhatsApp üzerinden ulaşın"
+            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 duration-200 flex items-center justify-center">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.11 4.9A9.85 9.85 0 0 0 12.004 2C6.502 2 2.01 6.493 2.01 11.996c0 1.74.44 3.4 1.255 4.85l-1.35 4.91 5.02-1.32c1.38.74 2.92.17 4.5.17h.005c5.498 0 9.99-4.492 9.99-9.992a9.85 9.85 0 0 0-2.32-6.7zM12.004 20.13c-1.5 0-2.93-.36-4.2-1.01l-.3-.18-3.12.82.83-3.04-.2-.31c-.74-1.29-1.14-2.77-1.14-4.31 0-4.5 3.67-8.17 8.18-8.17a8.1 8.1 0 0 1 5.76 2.39 8.1 8.1 0 0 1 2.39 5.77c-.01 4.5-3.68 8.17-8.18 8.17zm4.4-6.04c-.22-.11-1.29-.64-1.49-.71-.2-.07-.34-.11-.49.11-.15.22-.56.71-.69.85-.13.14-.26.16-.48.05-.22-.11-1.15-.42-2.19-1.35-.81-.72-1.37-1.62-1.53-1.9c-.16-.28-.01-.43.1-.57.1-.13.22-.34.33-.5.11-.16.15-.28.23-.47.08-.19.04-.36-.01-.47-.05-.11-.49-1.18-.67-1.61-.18-.43-.36-.37-.49-.37h-.45c-.13 0-.34.05-.52.22-.18.17-.69.66-.69 1.61s.71 1.87.81 2c.1.13 1.39 2.12 3.35 2.96.47.2.83.31 1.12.4.48.13.91.11 1.25-.06.37-.17 1.16-.54 1.32-1.02.16-.49.16-.91.11-1.02-.05-.11-.18-.17-.38-.28z"/>
+            </svg>
+        </a>
+
+        <a href="tel:+905551234567" 
+            aria-label="Telefonla arayın"
+            class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 duration-200 flex items-center justify-center">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobil menü açma/kapama
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Menüdeki linklere tıklayınca menüyü kapat
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Sayfadaki linklere tıklayınca menüyü kapat (ana menü)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Mobil menüyü de kapat
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Footer'daki yılı otomatik güncelle
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
